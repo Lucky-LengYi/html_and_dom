@@ -1,0 +1,10 @@
+{
+  "name": "home-work",
+  "version": "1.0.0",
+  "devDependencies": {
+    "body-parser": "^1.13.1",
+    "ejs": "^2.3.2",
+    "express": "^4.13.0",
+    "lodash": "^3.10.0"
+  }
+}

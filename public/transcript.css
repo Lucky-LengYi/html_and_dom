@@ -1,0 +1,15 @@
+.score{
+    border: 1px;
+    border-style: groove;
+    margin: 0 auto;
+    width: 270px;
+    height: 270px;
+    background-color: #F1F1F1;
+}
+.score li{
+    height: 35px;
+    list-style-type: none;
+}
+h3{
+    text-align: center;
+}
