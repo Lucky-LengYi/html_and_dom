@@ -1,3 +1,8 @@
+// document.getElementById("class_id").setCustomValidity('班级必须填写！');
+// document.getElementById("stu_id").setCustomValidity('学号必须填写！');
+// document.getElementById("stu_name").setCustomValidity('姓名必须填写！');
+
+
 document.querySelector("#submit").addEventListener("click", function(evt) {
     window.scroll(0, 0);
     if (document.getElementById("class_id").value === "" ||
@@ -7,7 +12,6 @@ document.querySelector("#submit").addEventListener("click", function(evt) {
         evt.preventDefault();
         return;
     }
-
     var form = new FormValueGetter();
     form.get_value();
 

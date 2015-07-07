@@ -31,18 +31,11 @@ get_score = function(name, value) {
     if (question === undefined) {
         return score;
     }
-    var result = [];
-    value.forEach(function(item) {
-        if (!exist(item, result)) {
-            result.push(item);
+    question.answer.forEach(function(element) {
+        if (exist(element,value)) {
+            score += question.score;
         }
     });
-    result.forEach(function(item) {
-        question.answer.forEach(function(element) {
-            if (item === element) {
-                score += question.score;
-            }
-        });
-    });
+
     return score;
 };
